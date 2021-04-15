@@ -29,7 +29,7 @@ void new_lista(Lista *l);
 //#02
 void enqueue_inicio(Lista *l,Produto produto);
 //=================================
-
+void enqueue_final(Lista *l,Produto produto);
 //=================================
 //#09
 void print_lista(Lista *l);
