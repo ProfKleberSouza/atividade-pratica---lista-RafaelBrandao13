@@ -56,25 +56,22 @@ void print_lista(Lista *l){
     }
 }
 //=================================
+void code_search(Lista *l,Produto produto){
 
-
-
-
-
-
-
-
-
-
-
-
+}
 //=================================
 void print_lista(Lista *l){
   Celula *tmp = l->inicio->prox;
-  while(tmp != NULL){
-    printf("Codigo:%d\nDescricao:%s\nValor:%.2f\nQuantidade:%d\n",tmp->dado.codigo,tmp->dado.descricao,tmp->dado.valor,tmp->dado.quantidade);
-    l->tam--;
-    tmp = tmp->prox;
+  if(tmp == NULL){
+    printf("NAO EXISTE ITEM NO ESTQOUE!!!\n");
   }
+  else
+    printf("==============================\n");
+    while(tmp != NULL){
+      printf("Codigo:%d\nDescricao:%s\nValor:R$ %.2f\nQuantidade:%d\n",tmp->dado.codigo,tmp->dado.descricao,tmp->dado.valor,tmp->dado.quantidade);
+      l->tam--;
+      tmp = tmp->prox;
+      printf("==============================\n");
+    }
 }
 //=================================
